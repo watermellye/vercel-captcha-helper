@@ -28,7 +28,7 @@ Vercel提供的默认访问Url需科学上网访问。若需能让境内用户�
 1. 在项目面板中，点击导航栏中的`Settings`，在左侧菜单栏中点击`Domains`，在右侧输入你准备好的（二级）域名，点击`Add`。
 2. 此时，Vercel会提示配置失败，并告知您需如何操作。以CNAME方式为例，您需登录您的域名提供商的解析面板，添加一条CNAME记录并保存使其生效。回到Vercel的配置页面后，即可看到配置成功。
 
-# 使用方式
+# 提供的API说明
 - 展示一张待过码图片：`/?captcha_type=1&challenge={challenge}&gt={gt}&userid={userid}&gs=1`
   - 需传入的`challenge`, `gt`, `userid`字段的生成方式可参考[此文件](https://github.com/watermellye/AutoPCR_Archived/blob/master/query/_bili_game_sdk.py#L83)中的`StartCaptcha()`函数
 - 用户过码完毕后，获取过码结果：`/api/block?userid={userid}/`或`/api/get?userid={userid}/`
